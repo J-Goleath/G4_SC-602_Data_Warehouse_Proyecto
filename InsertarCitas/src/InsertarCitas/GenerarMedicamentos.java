@@ -22,7 +22,7 @@ public class GenerarMedicamentos {
             "Tetraciclina", "Cefuroxima", "Clorhexidina", "Cefixima"
         };
 
-        int totalMedicamentos = 320;
+        int totalMedicamentos = 150;
         Random rand = new Random();
 
         try (FileWriter writer = new FileWriter(rutaArchivo)) {

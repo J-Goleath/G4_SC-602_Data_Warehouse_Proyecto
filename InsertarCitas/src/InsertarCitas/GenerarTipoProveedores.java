@@ -1,13 +1,32 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package InsertarCitas;
 
-/**
- *
- * @author Kevin
- */
+import java.io.FileWriter;
+import java.io.IOException;
+
 public class GenerarTipoProveedores {
-    
+
+    public static void generar() {
+        String rutaArchivo = "D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\Archivos CSV\\TipoProveedores.csv";
+
+        String[] descripciones = {
+            "Farmaceutico",
+            "Alimentos",
+            "Accesorios",
+            "Higiene",
+            "Equipamiento"
+        };
+
+        try (FileWriter writer = new FileWriter(rutaArchivo)) {
+
+            for (int i = 0; i < descripciones.length; i++) {
+                writer.append((i + 1) + "," + descripciones[i] + "\n");
+            }
+
+            System.out.println("Archivo TipoProveedores.csv generado correctamente.");
+            System.out.println("Total de lineas generadas: " + descripciones.length);
+
+        } catch (IOException e) {
+            System.out.println("Error al crear el archivo CSV: " + e.getMessage());
+        }
+    }
 }

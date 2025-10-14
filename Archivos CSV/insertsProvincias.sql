@@ -1,7 +1,7 @@
-insert into CineTX.dbo.provincias(nombreProvincia, idProvincia) values ('Alajuela',2);
-insert into CineTX.dbo.provincias(nombreProvincia, idProvincia) values ('Cartago',3);
-insert into CineTX.dbo.provincias(nombreProvincia, idProvincia) values ('Guanacaste',5);
-insert into CineTX.dbo.provincias(nombreProvincia, idProvincia) values ('Heredia',4);
-insert into CineTX.dbo.provincias(nombreProvincia, idProvincia) values ('Limón',7);
-insert into CineTX.dbo.provincias(nombreProvincia, idProvincia) values ('Puntarenas',6);
-insert into CineTX.dbo.provincias(nombreProvincia, idProvincia) values ('San José',1);
+INSERT INTO Veterinaria_Proyecto.dbo.Provincia (NombreProvincia) VALUES ('Alajuela');
+INSERT INTO Veterinaria_Proyecto.dbo.Provincia (NombreProvincia) VALUES ('Cartago');
+INSERT INTO Veterinaria_Proyecto.dbo.Provincia (NombreProvincia) VALUES ('Guanacaste');
+INSERT INTO Veterinaria_Proyecto.dbo.Provincia (NombreProvincia) VALUES ('Heredia');
+INSERT INTO Veterinaria_Proyecto.dbo.Provincia (NombreProvincia) VALUES ('Limón');
+INSERT INTO Veterinaria_Proyecto.dbo.Provincia (NombreProvincia) VALUES ('Puntarenas');
+INSERT INTO Veterinaria_Proyecto.dbo.Provincia (NombreProvincia) VALUES ('San José');
