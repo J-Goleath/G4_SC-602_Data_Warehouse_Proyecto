@@ -9,7 +9,7 @@ import java.time.format.DateTimeFormatter;
 public class GenerarFacturas {
 
     public static void generar() {
-        String rutaArchivo = "D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\Archivos CSV\\Factura.csv";
+        String rutaArchivo = Configuracion.rutaBase + "Facturas.csv";
 
         int totalFacturas = 2304000;   // Total de facturas (igual que citas)
         int totalAnimales = 504000;    // Total de animales
@@ -20,7 +20,7 @@ public class GenerarFacturas {
         LocalDate fechaFin = LocalDate.of(2024, 12, 31);
         long diasEntre = fechaFin.toEpochDay() - fechaInicio.toEpochDay();
 
-        DateTimeFormatter formatoFecha = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        DateTimeFormatter formatoFecha = DateTimeFormatter.ofPattern("yyyy-MM-dd");
 
         try (FileWriter writer = new FileWriter(rutaArchivo)) {
 

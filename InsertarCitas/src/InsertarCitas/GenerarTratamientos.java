@@ -9,7 +9,7 @@ import java.util.Set;
 public class GenerarTratamientos {
 
     public static void generar() {
-        String rutaArchivo = "D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\Archivos CSV\\Tratamientos.csv";
+        String rutaArchivo = Configuracion.rutaBase + "Tratamientos.csv";
 
         // Total de diagnósticos
         final int TOTAL_DIAGNOSTICOS = 2_995_200;
@@ -24,8 +24,8 @@ public class GenerarTratamientos {
         final int MAX_MEDICAMENTO = 320;
 
         // Dosis posibles
-        String[] dosisPosibles = {"5mg", "10mg", "15mg", "20mg", "25mg", "30mg",
-                                  "5ml", "10ml", "15ml", "20ml", "25ml", "30ml"};
+        String[] dosisPosibles = {"5", "10", "15", "20", "25", "30",
+                                  "5", "10", "15", "20", "25", "30"};
 
         Random rand = new Random();
         long inicio = System.currentTimeMillis();

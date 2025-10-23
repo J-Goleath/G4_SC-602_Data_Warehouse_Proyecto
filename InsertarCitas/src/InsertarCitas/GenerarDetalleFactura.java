@@ -7,7 +7,7 @@ import java.util.Random;
 public class GenerarDetalleFactura {
 
     public static void generar() {
-        String rutaArchivo = "D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\Archivos CSV\\DetalleFactura.csv";
+        String rutaArchivo = Configuracion.rutaBase + "DetalleFactura.csv";
 
         int totalLineas = 4932288;   // Total de lineas de DetalleFactura
         int totalCitas = 2304000;    // Total de citas

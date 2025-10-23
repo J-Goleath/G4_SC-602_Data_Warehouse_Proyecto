@@ -7,7 +7,7 @@ import java.util.Random;
 public class GenerarProveedores {
 
     public static void generar() {
-        String rutaArchivo = "D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\Archivos CSV\\Proveedores.csv";
+        String rutaArchivo = Configuracion.rutaBase + "Proveedores.csv";
 
         int totalProveedores = 150;
         int totalTipos = 5;

@@ -7,7 +7,7 @@ import java.util.Random;
 public class GenerarDiagnosticos {
 
     public static void generar() {
-        String rutaArchivo = "D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\Archivos CSV\\Diagnosticos.csv";
+        String rutaArchivo = Configuracion.rutaBase + "Diagnosticos.csv";
 
         int totalCitas = 2304000;
         int totalDiagnosticos = 2995200;

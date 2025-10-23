@@ -9,7 +9,7 @@ import java.util.Set;
 public class GenerarProductosProveedor {
 
     public static void generar() {
-        String rutaArchivo = "D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\Archivos CSV\\Productos_Proveedor.csv";
+        String rutaArchivo = Configuracion.rutaBase + "ProductosProveedor.csv";
 
         int totalProductos = 250;
         int totalProveedores = 150;

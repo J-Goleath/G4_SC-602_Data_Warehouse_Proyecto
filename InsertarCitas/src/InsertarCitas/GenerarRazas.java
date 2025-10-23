@@ -6,7 +6,7 @@ import java.io.IOException;
 public class GenerarRazas {
 
     public static void generar() {
-        String rutaArchivo = "D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\Archivos CSV\\Razas.csv";
+        String rutaArchivo = Configuracion.rutaBase + "Razas.csv";
 
         // Perros (33 razas)
         String[] razasPerros = {

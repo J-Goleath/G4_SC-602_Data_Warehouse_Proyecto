@@ -9,7 +9,7 @@ import java.time.format.DateTimeFormatter;
 public class GenerarCitas {
 
     public static void generar() {
-        String rutaArchivo = "D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\Archivos CSV\\Citas.csv";
+        String rutaArchivo = Configuracion.rutaBase + "Citas.csv";
 
         int totalCitas = 2304000;
         int totalAnimales = 504000;
@@ -27,7 +27,7 @@ public class GenerarCitas {
         LocalDate fechaFin = LocalDate.of(2025, 12, 31);
         long diasEntre = fechaFin.toEpochDay() - fechaInicio.toEpochDay();
 
-        DateTimeFormatter formatoFecha = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        DateTimeFormatter formatoFecha = DateTimeFormatter.ofPattern("yyyy-MM-dd");
 
         try (FileWriter writer = new FileWriter(rutaArchivo)) {
 

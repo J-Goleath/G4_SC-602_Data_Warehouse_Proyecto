@@ -7,7 +7,7 @@ import java.util.Random;
 public class GenerarMedicamentos {
 
     public static void generar() {
-        String rutaArchivo = "D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\Archivos CSV\\Medicamentos.csv";
+        String rutaArchivo = Configuracion.rutaBase + "Medicamentos.csv";
 
         String[] nombresBase = {
             "Amoxicilina", "Cefalexina", "Ivermectina", "Prednisolona", "Doxiciclina",
@@ -26,7 +26,6 @@ public class GenerarMedicamentos {
         Random rand = new Random();
 
         try (FileWriter writer = new FileWriter(rutaArchivo)) {
-            writer.append("ID_Medicamento,Nombre_Medicamento\n");
 
             for (int i = 1; i <= totalMedicamentos; i++) {
                 String base = nombresBase[rand.nextInt(nombresBase.length)];

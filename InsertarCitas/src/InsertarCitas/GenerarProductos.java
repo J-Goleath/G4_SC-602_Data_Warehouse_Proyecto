@@ -7,7 +7,7 @@ import java.util.Random;
 public class GenerarProductos {
 
     public static void generar() {
-        String rutaArchivo = "D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\Archivos CSV\\Productos.csv";
+        String rutaArchivo = Configuracion.rutaBase + "Productos.csv";
 
         int totalProductos = 250;
         int totalMedicamentos = 320;

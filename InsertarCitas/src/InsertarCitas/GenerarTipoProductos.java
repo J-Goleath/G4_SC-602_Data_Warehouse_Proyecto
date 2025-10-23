@@ -6,7 +6,7 @@ import java.io.IOException;
 public class GenerarTipoProductos {
 
     public static void generar() {
-        String rutaArchivo = "D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\Archivos CSV\\TipoProductos.csv";
+        String rutaArchivo = Configuracion.rutaBase + "TipoProductos.csv";
 
         String[] descripciones = {
             "Medicamento",

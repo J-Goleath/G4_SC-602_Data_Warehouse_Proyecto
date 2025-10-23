@@ -7,7 +7,7 @@ import java.util.Random;
 public class GenerarClientes {
 
     public static void generar() {
-        String rutaArchivo = "D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\Archivos CSV\\Clientes.csv";
+        String rutaArchivo = Configuracion.rutaBase + "Clientes.csv";
 
         final int TOTAL_CLIENTES = 360_000;
         final int TOTAL_DISTRITOS = 488;
@@ -32,12 +32,10 @@ public class GenerarClientes {
                     apellido2 = apellidos[rand.nextInt(apellidos.length)];
                 }
 
-                // Dirección y distrito
                 int idDistrito = rand.nextInt(TOTAL_DISTRITOS) + 1;
-                int numeroCalle = rand.nextInt(999) + 1;
-                String direccion = "Calle " + numeroCalle + ", Distrito " + idDistrito;
+                int direccionNumero = (idCliente - 1) % 350 + 1;
+                String direccion = "Direccion" + direccionNumero; 
 
-                // Email
                 String email = (nombre + "." + apellido1 + "@email.com").toLowerCase();
 
                 writer.append(idCliente + "," + nombre + "," + apellido1 + "," + apellido2 + "," + direccion + "," + email + "," + idDistrito + "\n");

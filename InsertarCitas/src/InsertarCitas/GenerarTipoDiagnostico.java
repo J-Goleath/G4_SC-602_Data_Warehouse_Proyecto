@@ -6,7 +6,7 @@ import java.io.IOException;
 public class GenerarTipoDiagnostico {
 
     public static void generar() {
-        String rutaArchivo = "D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\Archivos CSV\\TiposDiagnostico.csv";
+        String rutaArchivo = Configuracion.rutaBase + "TipoDiagnostico.csv";
 
         String[] descripciones = {
             "Enfermedades respiratorias",

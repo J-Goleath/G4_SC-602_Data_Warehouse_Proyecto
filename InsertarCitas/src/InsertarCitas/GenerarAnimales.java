@@ -7,7 +7,7 @@ import java.util.Random;
 public class GenerarAnimales {
 
     public static void generar() {
-        String rutaArchivo = "D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\Archivos CSV\\Animales.csv";
+        String rutaArchivo = Configuracion.rutaBase + "Animales.csv";
 
         final int TOTAL_CLIENTES = 360_000;
         final int TOTAL_RAZAS = 55;

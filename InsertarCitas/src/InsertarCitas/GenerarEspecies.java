@@ -6,7 +6,7 @@ import java.io.IOException;
 public class GenerarEspecies {
 
     public static void generar() {
-        String rutaArchivo = "D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\Archivos CSV\\Especies.csv";
+        String rutaArchivo = Configuracion.rutaBase + "Especies.csv";
 
         String[] especies = {
             "Perro",

@@ -7,7 +7,7 @@ import java.util.Random;
 public class GenerarMedicos {
 
     public static void generar() {
-        String rutaArchivo = "D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\Archivos CSV\\Medicos.csv";
+        String rutaArchivo = Configuracion.rutaBase + "Medicos.csv";
 
         String[] nombres = {"David", "Sofia", "Carlos", "Maria", "Jose", "Ana", "Luis", "Valeria", "Andres", "Fernanda",
                             "Diego", "Camila", "Juan", "Paula", "Ricardo", "Daniela", "Esteban", "Gabriela", "Felipe", "Laura"};

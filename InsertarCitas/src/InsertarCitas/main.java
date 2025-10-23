@@ -3,6 +3,9 @@ package InsertarCitas;
 public class main {
     public static void main(String[] args) {
 
+        //Configuracion de ruta para los archivos
+        Configuracion.rutaBase = "C:\\Users\\Kevin\\Documents\\ArchivosCSV\\";
+        
         // Generar archivo de medicos
         GenerarMedicos.generar();
 
