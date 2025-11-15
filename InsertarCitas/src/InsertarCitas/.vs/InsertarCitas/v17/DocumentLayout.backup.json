@@ -1,12 +1,294 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\InsertarCitas\\src\\InsertarCitas\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\InsertarCitas\\src\\InsertarCitas\\main.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:main.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\InsertarCitas\\src\\InsertarCitas\\GenerarTratamientos.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GenerarTratamientos.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\InsertarCitas\\src\\InsertarCitas\\GenerarMedicamentos.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GenerarMedicamentos.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\InsertarCitas\\src\\InsertarCitas\\GenerarTipoProveedores.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GenerarTipoProveedores.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\InsertarCitas\\src\\InsertarCitas\\GenerarTipoProductos.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GenerarTipoProductos.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\InsertarCitas\\src\\InsertarCitas\\GenerarTipoDiagnostico.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GenerarTipoDiagnostico.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\InsertarCitas\\src\\InsertarCitas\\GenerarRazas.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GenerarRazas.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\InsertarCitas\\src\\InsertarCitas\\GenerarProveedores.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GenerarProveedores.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\InsertarCitas\\src\\InsertarCitas\\GenerarProductos.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GenerarProductos.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\InsertarCitas\\src\\InsertarCitas\\GenerarMedicos.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GenerarMedicos.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\InsertarCitas\\src\\InsertarCitas\\GenerarFacturas.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GenerarFacturas.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\InsertarCitas\\src\\InsertarCitas\\GenerarEspecies.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GenerarEspecies.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\InsertarCitas\\src\\InsertarCitas\\GenerarDiagnosticos.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GenerarDiagnosticos.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\InsertarCitas\\src\\InsertarCitas\\GenerarDetalleFactura.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GenerarDetalleFactura.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\InsertarCitas\\src\\InsertarCitas\\GenerarClientes.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GenerarClientes.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\InsertarCitas\\src\\InsertarCitas\\GenerarAnimales.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GenerarAnimales.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 19,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GenerarTratamientos.java",
+              "DocumentMoniker": "D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\InsertarCitas\\src\\InsertarCitas\\GenerarTratamientos.java",
+              "RelativeDocumentMoniker": "GenerarTratamientos.java",
+              "ToolTip": "D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\InsertarCitas\\src\\InsertarCitas\\GenerarTratamientos.java",
+              "RelativeToolTip": "GenerarTratamientos.java",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001630|",
+              "WhenOpened": "2025-10-14T01:00:57.242Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GenerarTipoProveedores.java",
+              "DocumentMoniker": "D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\InsertarCitas\\src\\InsertarCitas\\GenerarTipoProveedores.java",
+              "RelativeDocumentMoniker": "GenerarTipoProveedores.java",
+              "ToolTip": "D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\InsertarCitas\\src\\InsertarCitas\\GenerarTipoProveedores.java",
+              "RelativeToolTip": "GenerarTipoProveedores.java",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001630|",
+              "WhenOpened": "2025-10-14T01:00:33.214Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GenerarTipoProductos.java",
+              "DocumentMoniker": "D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\InsertarCitas\\src\\InsertarCitas\\GenerarTipoProductos.java",
+              "RelativeDocumentMoniker": "GenerarTipoProductos.java",
+              "ToolTip": "D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\InsertarCitas\\src\\InsertarCitas\\GenerarTipoProductos.java",
+              "RelativeToolTip": "GenerarTipoProductos.java",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001630|",
+              "WhenOpened": "2025-10-14T01:00:06.1Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GenerarTipoDiagnostico.java",
+              "DocumentMoniker": "D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\InsertarCitas\\src\\InsertarCitas\\GenerarTipoDiagnostico.java",
+              "RelativeDocumentMoniker": "GenerarTipoDiagnostico.java",
+              "ToolTip": "D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\InsertarCitas\\src\\InsertarCitas\\GenerarTipoDiagnostico.java",
+              "RelativeToolTip": "GenerarTipoDiagnostico.java",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001630|",
+              "WhenOpened": "2025-10-14T00:59:44.436Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GenerarRazas.java",
+              "DocumentMoniker": "D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\InsertarCitas\\src\\InsertarCitas\\GenerarRazas.java",
+              "RelativeDocumentMoniker": "GenerarRazas.java",
+              "ToolTip": "D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\InsertarCitas\\src\\InsertarCitas\\GenerarRazas.java",
+              "RelativeToolTip": "GenerarRazas.java",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001630|",
+              "WhenOpened": "2025-10-14T00:59:42.841Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GenerarProveedores.java",
+              "DocumentMoniker": "D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\InsertarCitas\\src\\InsertarCitas\\GenerarProveedores.java",
+              "RelativeDocumentMoniker": "GenerarProveedores.java",
+              "ToolTip": "D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\InsertarCitas\\src\\InsertarCitas\\GenerarProveedores.java",
+              "RelativeToolTip": "GenerarProveedores.java",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001630|",
+              "WhenOpened": "2025-10-14T00:59:29.073Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "GenerarProductos.java",
+              "DocumentMoniker": "D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\InsertarCitas\\src\\InsertarCitas\\GenerarProductos.java",
+              "RelativeDocumentMoniker": "GenerarProductos.java",
+              "ToolTip": "D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\InsertarCitas\\src\\InsertarCitas\\GenerarProductos.java",
+              "RelativeToolTip": "GenerarProductos.java",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001630|",
+              "WhenOpened": "2025-10-14T00:59:14.251Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "GenerarMedicos.java",
+              "DocumentMoniker": "D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\InsertarCitas\\src\\InsertarCitas\\GenerarMedicos.java",
+              "RelativeDocumentMoniker": "GenerarMedicos.java",
+              "ToolTip": "D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\InsertarCitas\\src\\InsertarCitas\\GenerarMedicos.java",
+              "RelativeToolTip": "GenerarMedicos.java",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001630|",
+              "WhenOpened": "2025-10-14T00:59:11.903Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "GenerarFacturas.java",
+              "DocumentMoniker": "D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\InsertarCitas\\src\\InsertarCitas\\GenerarFacturas.java",
+              "RelativeDocumentMoniker": "GenerarFacturas.java",
+              "ToolTip": "D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\InsertarCitas\\src\\InsertarCitas\\GenerarFacturas.java",
+              "RelativeToolTip": "GenerarFacturas.java",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001630|",
+              "WhenOpened": "2025-10-14T00:58:54.438Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "GenerarEspecies.java",
+              "DocumentMoniker": "D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\InsertarCitas\\src\\InsertarCitas\\GenerarEspecies.java",
+              "RelativeDocumentMoniker": "GenerarEspecies.java",
+              "ToolTip": "D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\InsertarCitas\\src\\InsertarCitas\\GenerarEspecies.java",
+              "RelativeToolTip": "GenerarEspecies.java",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001630|",
+              "WhenOpened": "2025-10-14T00:58:53.097Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "GenerarDiagnosticos.java",
+              "DocumentMoniker": "D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\InsertarCitas\\src\\InsertarCitas\\GenerarDiagnosticos.java",
+              "RelativeDocumentMoniker": "GenerarDiagnosticos.java",
+              "ToolTip": "D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\InsertarCitas\\src\\InsertarCitas\\GenerarDiagnosticos.java",
+              "RelativeToolTip": "GenerarDiagnosticos.java",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001630|",
+              "WhenOpened": "2025-10-14T00:58:51.164Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "GenerarDetalleFactura.java",
+              "DocumentMoniker": "D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\InsertarCitas\\src\\InsertarCitas\\GenerarDetalleFactura.java",
+              "RelativeDocumentMoniker": "GenerarDetalleFactura.java",
+              "ToolTip": "D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\InsertarCitas\\src\\InsertarCitas\\GenerarDetalleFactura.java",
+              "RelativeToolTip": "GenerarDetalleFactura.java",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001630|",
+              "WhenOpened": "2025-10-14T00:58:28.946Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "GenerarClientes.java",
+              "DocumentMoniker": "D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\InsertarCitas\\src\\InsertarCitas\\GenerarClientes.java",
+              "RelativeDocumentMoniker": "GenerarClientes.java",
+              "ToolTip": "D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\InsertarCitas\\src\\InsertarCitas\\GenerarClientes.java",
+              "RelativeToolTip": "GenerarClientes.java",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001630|",
+              "WhenOpened": "2025-10-14T00:58:27.517Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "GenerarAnimales.java",
+              "DocumentMoniker": "D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\InsertarCitas\\src\\InsertarCitas\\GenerarAnimales.java",
+              "RelativeDocumentMoniker": "GenerarAnimales.java",
+              "ToolTip": "D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\InsertarCitas\\src\\InsertarCitas\\GenerarAnimales.java",
+              "RelativeToolTip": "GenerarAnimales.java",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001630|",
+              "WhenOpened": "2025-10-14T00:58:25.905Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GenerarMedicamentos.java",
+              "DocumentMoniker": "D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\InsertarCitas\\src\\InsertarCitas\\GenerarMedicamentos.java",
+              "RelativeDocumentMoniker": "GenerarMedicamentos.java",
+              "ToolTip": "D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\InsertarCitas\\src\\InsertarCitas\\GenerarMedicamentos.java",
+              "RelativeToolTip": "GenerarMedicamentos.java",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001630|",
+              "WhenOpened": "2025-10-14T00:58:23.125Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.java",
+              "DocumentMoniker": "D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\InsertarCitas\\src\\InsertarCitas\\main.java",
+              "RelativeDocumentMoniker": "main.java",
+              "ToolTip": "D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\InsertarCitas\\src\\InsertarCitas\\main.java",
+              "RelativeToolTip": "main.java",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001630|",
+              "WhenOpened": "2025-10-14T00:53:44.082Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

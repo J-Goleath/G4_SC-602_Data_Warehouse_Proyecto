@@ -4,28 +4,29 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Random;
 import java.util.HashSet;
-import java.util.Set;
 
 public class GenerarTratamientos {
 
     public static void generar() {
         String rutaArchivo = Configuracion.rutaBase + "Tratamientos.csv";
 
-        // Total de diagnósticos
+        // Total diagnósticos reales
         final int TOTAL_DIAGNOSTICOS = 2_995_200;
 
-        // Distribución
-        final int DIAG_1 = (int) (TOTAL_DIAGNOSTICOS * 0.70); // 70 % con 1 tratamiento
-        final int DIAG_2 = (int) (TOTAL_DIAGNOSTICOS * 0.25); // 25 % con 2 tratamientos
-        final int DIAG_3 = TOTAL_DIAGNOSTICOS - DIAG_1 - DIAG_2; // 5 % con 3 tratamientos
+        // Solo 65% reciben tratamiento
+        final int DIAGNOSTICOS_TRATADOS = (int) (TOTAL_DIAGNOSTICOS * 0.65);
 
-        // Rango de medicamentos
-        final int MIN_MEDICAMENTO = 1;
-        final int MAX_MEDICAMENTO = 320;
+        // Distribución correcta dentro del 65%
+        final int GRUPO_1 = (int) (DIAGNOSTICOS_TRATADOS * 0.70); // 1 tratamiento
+        final int GRUPO_2 = (int) (DIAGNOSTICOS_TRATADOS * 0.25); // 2 tratamientos
+        final int GRUPO_3 = DIAGNOSTICOS_TRATADOS - GRUPO_1 - GRUPO_2; // 5% → 3 tratamientos
 
-        // Dosis posibles
-        String[] dosisPosibles = {"5", "10", "15", "20", "25", "30",
-                                  "5", "10", "15", "20", "25", "30"};
+        // Medicamentos disponibles
+        final int MIN_MED = 1;
+        final int MAX_MED = 320;
+
+        // Dosis disponibles
+        String[] dosis = {"5", "10", "15", "20", "25", "30"};
 
         Random rand = new Random();
         long inicio = System.currentTimeMillis();
@@ -34,63 +35,65 @@ public class GenerarTratamientos {
 
             int idTratamiento = 1;
 
-            // Paso 1: Todos los diagnósticos reciben al menos 1 tratamiento
-            for (int idDiagnostico = 1; idDiagnostico <= TOTAL_DIAGNOSTICOS; idDiagnostico++) {
-                int idMedicamento = rand.nextInt(MAX_MEDICAMENTO - MIN_MEDICAMENTO + 1) + MIN_MEDICAMENTO;
-                String dosis = dosisPosibles[rand.nextInt(dosisPosibles.length)];
+            // ======== 1 TRATAMIENTO ========
+            for (int i = 0; i < GRUPO_1; i++) {
+                int idDiagnostico = rand.nextInt(TOTAL_DIAGNOSTICOS) + 1;
+                int idMedicamento = rand.nextInt(MAX_MED - MIN_MED + 1) + MIN_MED;
+                String d = dosis[rand.nextInt(dosis.length)];
 
-                writer.append(idTratamiento + "," + idDiagnostico + "," + idMedicamento + "," + dosis + "\n");
+                writer.append(idTratamiento + "," + idDiagnostico + "," + idMedicamento + "," + d + "\n");
                 idTratamiento++;
 
-                if (idDiagnostico % 500000 == 0) {
-                    System.out.println("Asignado tratamiento base a diagnostico " + idDiagnostico);
-                }
+                if (i % 200000 == 0)
+                    System.out.println("Progreso grupo 1: " + i);
             }
 
-            // Paso 2: Seleccionar diagnósticos para un 2do tratamiento (25 %)
-            for (int i = 0; i < DIAG_2; i++) {
+            // ======== 2 TRATAMIENTOS ========
+            for (int i = 0; i < GRUPO_2; i++) {
                 int idDiagnostico = rand.nextInt(TOTAL_DIAGNOSTICOS) + 1;
-                Set<Integer> usados = new HashSet<>();
 
-                // Para evitar repetir medicamento ya asignado al mismo diagnóstico
-                int idMedicamentoBase = rand.nextInt(MAX_MEDICAMENTO - MIN_MEDICAMENTO + 1) + MIN_MEDICAMENTO;
-                usados.add(idMedicamentoBase);
+                HashSet<Integer> usados = new HashSet<>();
 
-                int idMedicamento;
-                do {
-                    idMedicamento = rand.nextInt(MAX_MEDICAMENTO - MIN_MEDICAMENTO + 1) + MIN_MEDICAMENTO;
-                } while (usados.contains(idMedicamento));
-
-                String dosis = dosisPosibles[rand.nextInt(dosisPosibles.length)];
-                writer.append(idTratamiento + "," + idDiagnostico + "," + idMedicamento + "," + dosis + "\n");
-                idTratamiento++;
-
-                if (i % 250000 == 0 && i > 0) {
-                    System.out.println("Progreso grupo 2: " + i + " tratamientos generados");
-                }
-            }
-
-            // Paso 3: Seleccionar diagnósticos para un 3er tratamiento (5 %)
-            for (int i = 0; i < DIAG_3; i++) {
-                int idDiagnostico = rand.nextInt(TOTAL_DIAGNOSTICOS) + 1;
-                Set<Integer> usados = new HashSet<>();
-
-                // Añadir 2 medicamentos adicionales diferentes
                 for (int t = 0; t < 2; t++) {
                     int idMedicamento;
                     do {
-                        idMedicamento = rand.nextInt(MAX_MEDICAMENTO - MIN_MEDICAMENTO + 1) + MIN_MEDICAMENTO;
+                        idMedicamento = rand.nextInt(MAX_MED - MIN_MED + 1) + MIN_MED;
                     } while (usados.contains(idMedicamento));
+
                     usados.add(idMedicamento);
 
-                    String dosis = dosisPosibles[rand.nextInt(dosisPosibles.length)];
-                    writer.append(idTratamiento + "," + idDiagnostico + "," + idMedicamento + "," + dosis + "\n");
+                    String d = dosis[rand.nextInt(dosis.length)];
+
+                    writer.append(idTratamiento + "," + idDiagnostico + "," + idMedicamento + "," + d + "\n");
                     idTratamiento++;
                 }
 
-                if (i % 100000 == 0 && i > 0) {
-                    System.out.println("Progreso grupo 3: " + i + " tratamientos generados");
+                if (i % 150000 == 0)
+                    System.out.println("Progreso grupo 2: " + i);
+            }
+
+            // ======== 3 TRATAMIENTOS ========
+            for (int i = 0; i < GRUPO_3; i++) {
+                int idDiagnostico = rand.nextInt(TOTAL_DIAGNOSTICOS) + 1;
+
+                HashSet<Integer> usados = new HashSet<>();
+
+                for (int t = 0; t < 3; t++) {
+                    int idMedicamento;
+                    do {
+                        idMedicamento = rand.nextInt(MAX_MED - MIN_MED + 1) + MIN_MED;
+                    } while (usados.contains(idMedicamento));
+
+                    usados.add(idMedicamento);
+
+                    String d = dosis[rand.nextInt(dosis.length)];
+
+                    writer.append(idTratamiento + "," + idDiagnostico + "," + idMedicamento + "," + d + "\n");
+                    idTratamiento++;
                 }
+
+                if (i % 50000 == 0)
+                    System.out.println("Progreso grupo 3: " + i);
             }
 
             System.out.println("Archivo generado correctamente");
@@ -101,7 +104,6 @@ public class GenerarTratamientos {
         }
 
         long fin = System.currentTimeMillis();
-        double segundos = (fin - inicio) / 1000.0;
-        System.out.println("Tiempo total: " + segundos + " segundos");
+        System.out.println("Tiempo total: " + (fin - inicio) / 1000.0 + " segundos");
     }
 }

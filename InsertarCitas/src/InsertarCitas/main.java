@@ -7,54 +7,54 @@ public class main {
         Configuracion.rutaBase = "C:\\Users\\Kevin\\Documents\\ArchivosCSV\\";
         
         // Generar archivo de medicos
-        GenerarMedicos.generar();
+        //GenerarMedicos.generar();
 
         // Generar archivo de diagnosticos
-        GenerarDiagnosticos.generar();
+        //GenerarDiagnosticos.generar();
         
-        // Generar archivo de Tratamientos
-        GenerarTratamientos.generar();
+        // Generar archivo de Tratamientos`
+        //GenerarTratamientos.generar();
         
         // Generar archivo de Cliente
-        GenerarClientes.generar();
+        //GenerarClientes.generar();
         
         // Generar archivo de Animales
-        GenerarAnimales.generar();
+       // GenerarAnimales.generar();
         
         // Generar archivo de Especies
-        GenerarEspecies.generar();
+        //GenerarEspecies.generar();
         
         // Generar archivo de Razas
-        GenerarRazas.generar();
+       // GenerarRazas.generar();
         
         // Generar archivo de Medicamentos
-        GenerarMedicamentos.generar();
+       // GenerarMedicamentos.generar();
         
         // Generar archivo de DetalleFacturas
-        GenerarDetalleFactura.generar();
+          GenerarDetalleFactura.generar();
         
         // Generar archivo de Facturas
-        GenerarFacturas.generar();
+      //  GenerarFacturas.generar();
         
         // Generar archivo de Productos
-        GenerarProductos.generar();
+     //   GenerarProductos.generar();
         
         // Generar archivo de Proveedores
-        GenerarProveedores.generar();
+    //    GenerarProveedores.generar();
         
         // Generar archivo de ProductosProveedor
-        GenerarProductosProveedor.generar();
+     //   GenerarProductosProveedor.generar();
         
         // Generar archivo de Citas
-        GenerarCitas.generar();
+       // GenerarCitas.generar();
         
         // Generar archivo de TipoDiagnostico
-        GenerarTipoDiagnostico.generar();
+       // GenerarTipoDiagnostico.generar();
         
         // Generar archivo de TipoDiagnostico
-        GenerarTipoProductos.generar();
+      //  GenerarTipoProductos.generar();
         
         // Generar archivo de TipoDiagnostico
-        GenerarTipoProveedores.generar();
+      //  GenerarTipoProveedores.generar();
     }
 }

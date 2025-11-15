@@ -7,12 +7,16 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:main.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\InsertarCitas\\src\\InsertarCitas\\GenerarMedicamentos.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GenerarMedicamentos.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\InsertarCitas\\src\\InsertarCitas\\GenerarTratamientos.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GenerarTratamientos.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\InsertarCitas\\src\\InsertarCitas\\GenerarCitas.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GenerarCitas.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\InsertarCitas\\src\\InsertarCitas\\GenerarMedicamentos.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GenerarMedicamentos.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\InsertarCitas\\src\\InsertarCitas\\GenerarTipoProveedores.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
@@ -74,7 +78,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 19,
+          "SelectedChildIndex": 20,
           "Children": [
             {
               "$type": "Bookmark",
@@ -95,19 +99,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "GenerarCitas.java",
+              "DocumentMoniker": "D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\InsertarCitas\\src\\InsertarCitas\\GenerarCitas.java",
+              "RelativeDocumentMoniker": "GenerarCitas.java",
+              "ToolTip": "D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\InsertarCitas\\src\\InsertarCitas\\GenerarCitas.java",
+              "RelativeToolTip": "GenerarCitas.java",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001630|",
+              "WhenOpened": "2025-11-15T00:22:56.175Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "GenerarTratamientos.java",
               "DocumentMoniker": "D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\InsertarCitas\\src\\InsertarCitas\\GenerarTratamientos.java",
               "RelativeDocumentMoniker": "GenerarTratamientos.java",
               "ToolTip": "D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\InsertarCitas\\src\\InsertarCitas\\GenerarTratamientos.java",
               "RelativeToolTip": "GenerarTratamientos.java",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAG0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001630|",
               "WhenOpened": "2025-10-14T01:00:57.242Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "GenerarTipoProveedores.java",
               "DocumentMoniker": "D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\InsertarCitas\\src\\InsertarCitas\\GenerarTipoProveedores.java",
               "RelativeDocumentMoniker": "GenerarTipoProveedores.java",
@@ -115,12 +132,11 @@
               "RelativeToolTip": "GenerarTipoProveedores.java",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001630|",
-              "WhenOpened": "2025-10-14T01:00:33.214Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-14T01:00:33.214Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "GenerarTipoProductos.java",
               "DocumentMoniker": "D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\InsertarCitas\\src\\InsertarCitas\\GenerarTipoProductos.java",
               "RelativeDocumentMoniker": "GenerarTipoProductos.java",
@@ -128,12 +144,11 @@
               "RelativeToolTip": "GenerarTipoProductos.java",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001630|",
-              "WhenOpened": "2025-10-14T01:00:06.1Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-14T01:00:06.1Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "GenerarTipoDiagnostico.java",
               "DocumentMoniker": "D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\InsertarCitas\\src\\InsertarCitas\\GenerarTipoDiagnostico.java",
               "RelativeDocumentMoniker": "GenerarTipoDiagnostico.java",
@@ -141,12 +156,11 @@
               "RelativeToolTip": "GenerarTipoDiagnostico.java",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001630|",
-              "WhenOpened": "2025-10-14T00:59:44.436Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-14T00:59:44.436Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "GenerarRazas.java",
               "DocumentMoniker": "D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\InsertarCitas\\src\\InsertarCitas\\GenerarRazas.java",
               "RelativeDocumentMoniker": "GenerarRazas.java",
@@ -154,12 +168,11 @@
               "RelativeToolTip": "GenerarRazas.java",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001630|",
-              "WhenOpened": "2025-10-14T00:59:42.841Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-14T00:59:42.841Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "GenerarProveedores.java",
               "DocumentMoniker": "D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\InsertarCitas\\src\\InsertarCitas\\GenerarProveedores.java",
               "RelativeDocumentMoniker": "GenerarProveedores.java",
@@ -167,12 +180,11 @@
               "RelativeToolTip": "GenerarProveedores.java",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001630|",
-              "WhenOpened": "2025-10-14T00:59:29.073Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-14T00:59:29.073Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "GenerarProductos.java",
               "DocumentMoniker": "D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\InsertarCitas\\src\\InsertarCitas\\GenerarProductos.java",
               "RelativeDocumentMoniker": "GenerarProductos.java",
@@ -180,12 +192,11 @@
               "RelativeToolTip": "GenerarProductos.java",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001630|",
-              "WhenOpened": "2025-10-14T00:59:14.251Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-14T00:59:14.251Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "GenerarMedicos.java",
               "DocumentMoniker": "D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\InsertarCitas\\src\\InsertarCitas\\GenerarMedicos.java",
               "RelativeDocumentMoniker": "GenerarMedicos.java",
@@ -193,12 +204,11 @@
               "RelativeToolTip": "GenerarMedicos.java",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001630|",
-              "WhenOpened": "2025-10-14T00:59:11.903Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-14T00:59:11.903Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "GenerarFacturas.java",
               "DocumentMoniker": "D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\InsertarCitas\\src\\InsertarCitas\\GenerarFacturas.java",
               "RelativeDocumentMoniker": "GenerarFacturas.java",
@@ -206,12 +216,11 @@
               "RelativeToolTip": "GenerarFacturas.java",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001630|",
-              "WhenOpened": "2025-10-14T00:58:54.438Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-14T00:58:54.438Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "GenerarEspecies.java",
               "DocumentMoniker": "D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\InsertarCitas\\src\\InsertarCitas\\GenerarEspecies.java",
               "RelativeDocumentMoniker": "GenerarEspecies.java",
@@ -219,12 +228,11 @@
               "RelativeToolTip": "GenerarEspecies.java",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001630|",
-              "WhenOpened": "2025-10-14T00:58:53.097Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-14T00:58:53.097Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "GenerarDiagnosticos.java",
               "DocumentMoniker": "D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\InsertarCitas\\src\\InsertarCitas\\GenerarDiagnosticos.java",
               "RelativeDocumentMoniker": "GenerarDiagnosticos.java",
@@ -232,12 +240,11 @@
               "RelativeToolTip": "GenerarDiagnosticos.java",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001630|",
-              "WhenOpened": "2025-10-14T00:58:51.164Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-14T00:58:51.164Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "GenerarDetalleFactura.java",
               "DocumentMoniker": "D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\InsertarCitas\\src\\InsertarCitas\\GenerarDetalleFactura.java",
               "RelativeDocumentMoniker": "GenerarDetalleFactura.java",
@@ -245,12 +252,11 @@
               "RelativeToolTip": "GenerarDetalleFactura.java",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001630|",
-              "WhenOpened": "2025-10-14T00:58:28.946Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-14T00:58:28.946Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "GenerarClientes.java",
               "DocumentMoniker": "D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\InsertarCitas\\src\\InsertarCitas\\GenerarClientes.java",
               "RelativeDocumentMoniker": "GenerarClientes.java",
@@ -258,12 +264,11 @@
               "RelativeToolTip": "GenerarClientes.java",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001630|",
-              "WhenOpened": "2025-10-14T00:58:27.517Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-14T00:58:27.517Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "GenerarAnimales.java",
               "DocumentMoniker": "D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\InsertarCitas\\src\\InsertarCitas\\GenerarAnimales.java",
               "RelativeDocumentMoniker": "GenerarAnimales.java",
@@ -271,12 +276,11 @@
               "RelativeToolTip": "GenerarAnimales.java",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001630|",
-              "WhenOpened": "2025-10-14T00:58:25.905Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-14T00:58:25.905Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "GenerarMedicamentos.java",
               "DocumentMoniker": "D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\InsertarCitas\\src\\InsertarCitas\\GenerarMedicamentos.java",
               "RelativeDocumentMoniker": "GenerarMedicamentos.java",
@@ -284,8 +288,7 @@
               "RelativeToolTip": "GenerarMedicamentos.java",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001630|",
-              "WhenOpened": "2025-10-14T00:58:23.125Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-14T00:58:23.125Z"
             },
             {
               "$type": "Document",
@@ -295,7 +298,7 @@
               "RelativeDocumentMoniker": "main.java",
               "ToolTip": "D:\\Documentos\\DataWareHouse\\G4_SC-602_Data_Warehouse_Proyecto\\InsertarCitas\\src\\InsertarCitas\\main.java",
               "RelativeToolTip": "main.java",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001630|",
               "WhenOpened": "2025-10-14T00:53:44.082Z",
               "EditorCaption": ""
