@@ -44,18 +44,19 @@ public class GenerarDetalleFactura {
                 int citaId = rand.nextInt(TOTAL_CITAS) + 1;
                 int tratamientoId = rand.nextInt(TOTAL_TRATAMIENTOS) + 1;
 
-                String linea = idDetalle + "," +
-                               productoId + "," +
-                               facturaId + "," +
-                               cantidad + "," +
-                               citaId + "," +
-                               tratamientoId;
+                String linea = idDetalle + ","
+                        + productoId + ","
+                        + facturaId + ","
+                        + cantidad + ","
+                        + citaId + ","
+                        + tratamientoId;
 
                 todasLasLineas.add(linea);
                 idDetalle++;
 
-                if (i % 500000 == 0 && i > 0)
+                if (i % 500000 == 0 && i > 0) {
                     System.out.println("Generados CON cita: " + i);
+                }
             }
 
             // ============================================================
@@ -67,18 +68,17 @@ public class GenerarDetalleFactura {
                 int facturaId = rand.nextInt(TOTAL_FACTURAS) + 1;
                 int cantidad = rand.nextInt(3) + 1;
 
-                String linea = idDetalle + "," +
-                               productoId + "," +
-                               facturaId + "," +
-                               cantidad + "," +
-                               "NULL" + "," +
-                               "NULL";
+                String linea = idDetalle + ","
+                        + productoId + ","
+                        + facturaId + ","
+                        + cantidad + ",,";
 
                 todasLasLineas.add(linea);
                 idDetalle++;
 
-                if (i % 500000 == 0 && i > 0)
+                if (i % 500000 == 0 && i > 0) {
                     System.out.println("Generados SIN cita: " + i);
+                }
             }
 
             // ============================================================
