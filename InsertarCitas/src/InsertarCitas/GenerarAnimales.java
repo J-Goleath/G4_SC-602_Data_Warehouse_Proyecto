@@ -55,12 +55,41 @@ public class GenerarAnimales {
                     double peso = 1 + (49 * rand.nextDouble()); // 1 a 50 kg
                     peso = Math.round(peso * 10.0) / 10.0; // Redondear a 1 decimal
 
-                    writer.append(idAnimal + "," + idRaza + "," + idCliente + "," + nombreMascota + "," + edad + "," + peso + "\n");
+                    writer.append(idAnimal + "," + idRaza + "," + idCliente + "," +
+                                  nombreMascota + "," + edad + "," + peso + "\n");
                     idAnimal++;
                 }
 
                 if (idCliente % 50_000 == 0) {
-                    System.out.println("Clientes procesados: " + idCliente + " | Animales generados: " + idAnimal);
+                    System.out.println("Clientes procesados: " + idCliente +
+                                       " | Animales generados: " + idAnimal);
+                }
+            }
+
+            int totalGenerados = idAnimal - 1;
+
+            if (totalGenerados < TOTAL_ANIMALES_ESPERADO) {
+
+                int faltantes = TOTAL_ANIMALES_ESPERADO - totalGenerados;
+
+                System.out.println("Se generaron menos animales de lo esperado: " +
+                                   totalGenerados + ". Faltantes: " + faltantes);
+
+                for (int k = 0; k < faltantes; k++) {
+
+                    int idRaza = rand.nextInt(TOTAL_RAZAS) + 1;
+                    String nombreMascota = nombresMascotas[rand.nextInt(nombresMascotas.length)];
+                    int edad = rand.nextInt(21);
+                    double peso = 1 + (49 * rand.nextDouble());
+                    peso = Math.round(peso * 10.0) / 10.0;
+
+                    // Cliente aleatorio válido
+                    int idCliente = rand.nextInt(TOTAL_CLIENTES) + 1;
+
+                    writer.append(idAnimal + "," + idRaza + "," + idCliente + "," +
+                                  nombreMascota + "," + edad + "," + peso + "\n");
+
+                    idAnimal++;
                 }
             }
 

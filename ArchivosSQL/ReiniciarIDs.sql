@@ -15,3 +15,7 @@ DBCC CHECKIDENT ('Veterinaria_Proyecto.dbo.Tipo_Productos', RESEED, 0);
 DBCC CHECKIDENT ('Veterinaria_Proyecto.dbo.Tipos_de_Diagnostico', RESEED, 0);
 DBCC CHECKIDENT ('Veterinaria_Proyecto.dbo.Tipos_Proveedor', RESEED, 0);
 DBCC CHECKIDENT ('Veterinaria_Proyecto.dbo.Tratamientos', RESEED, 0);
+
+
+
+DBCC CHECKIDENT ('Veterinaria_Proyecto.dbo.Distrito', RESEED, 0);

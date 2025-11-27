@@ -16,12 +16,16 @@ public class GenerarDetalleFactura {
         final int TOTAL_CITAS = 2_304_000;        // Citas generadas
         final int TOTAL_TRATAMIENTOS = 2_628_288; // Tratamientos generados
         final int TOTAL_PRODUCTOS = 250;
-        final int TOTAL_FACTURAS = 1_500_000;     // <-- Ajustar si tu sistema usa otro valor
+        final int TOTAL_FACTURAS = 2_304_000;
 
         final double PORCENTAJE_CON_CITA = 0.65;
 
         int lineasConCita = (int) (TOTAL_LINEAS * PORCENTAJE_CON_CITA);
         int lineasSinCita = TOTAL_LINEAS - lineasConCita;
+
+        // NUEVA LÓGICA: división interna del 65%
+        int lineasConCitaConProducto = (int) (lineasConCita * 0.45);
+        int lineasConCitaSinProducto = lineasConCita - lineasConCitaConProducto;
 
         Random rand = new Random();
 
@@ -32,10 +36,9 @@ public class GenerarDetalleFactura {
             ArrayList<String> todasLasLineas = new ArrayList<>(TOTAL_LINEAS);
             int idDetalle = 1;
 
-            // ============================================================
-            // 65% — Registros CON cita y CON tratamiento
-            // ============================================================
-            for (int i = 0; i < lineasConCita; i++) {
+            // 65% — Registros CON cita/tratamiento Y con producto (45% del 65%)
+            
+            for (int i = 0; i < lineasConCitaConProducto; i++) {
 
                 int productoId = rand.nextInt(TOTAL_PRODUCTOS) + 1;
                 int facturaId = rand.nextInt(TOTAL_FACTURAS) + 1;
@@ -55,13 +58,35 @@ public class GenerarDetalleFactura {
                 idDetalle++;
 
                 if (i % 500000 == 0 && i > 0) {
-                    System.out.println("Generados CON cita: " + i);
+                    System.out.println("Generados CON cita (CON producto): " + i);
                 }
             }
 
-            // ============================================================
-            // 35% — Registros SIN cita y SIN tratamiento
-            // ============================================================
+            // 65% — Registros CON cita/tratamiento PERO SIN producto (55% del 65%)
+            
+            for (int i = 0; i < lineasConCitaSinProducto; i++) {
+
+                int facturaId = rand.nextInt(TOTAL_FACTURAS) + 1;
+                int cantidad = rand.nextInt(3) + 1;
+
+                int citaId = rand.nextInt(TOTAL_CITAS) + 1;
+                int tratamientoId = rand.nextInt(TOTAL_TRATAMIENTOS) + 1;
+
+                // NOTA: doble coma al inicio donde va el producto
+                String linea = idDetalle + ",,"
+                        + facturaId + ","
+                        + cantidad + ","
+                        + citaId + ","
+                        + tratamientoId;
+
+                todasLasLineas.add(linea);
+                idDetalle++;
+
+                if (i % 500000 == 0 && i > 0) {
+                    System.out.println("Generados CON cita (SIN producto): " + i);
+                }
+            }
+
             for (int i = 0; i < lineasSinCita; i++) {
 
                 int productoId = rand.nextInt(TOTAL_PRODUCTOS) + 1;
@@ -81,14 +106,8 @@ public class GenerarDetalleFactura {
                 }
             }
 
-            // ============================================================
-            // MEZCLA ALEATORIA DE TODAS LAS LÍNEAS
-            // ============================================================
             Collections.shuffle(todasLasLineas);
 
-            // ============================================================
-            // ESCRIBIR TODAS LAS LÍNEAS AL ARCHIVO
-            // ============================================================
             for (String linea : todasLasLineas) {
                 writer.append(linea).append("\n");
             }

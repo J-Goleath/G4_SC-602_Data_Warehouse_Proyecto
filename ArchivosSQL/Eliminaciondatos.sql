@@ -22,4 +22,6 @@ DELETE FROM Veterinaria_Proyecto.dbo.Tipo_Productos;
 DELETE FROM Veterinaria_Proyecto.dbo.Tipos_Proveedor;
 DELETE FROM Veterinaria_Proyecto.dbo.Medicamentos;
 
+DELETE FROM Veterinaria_Proyecto.dbo.Distrito;
+
 EXEC sp_msforeachtable "ALTER TABLE ? CHECK CONSTRAINT ALL";
