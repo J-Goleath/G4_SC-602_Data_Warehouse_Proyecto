@@ -5,7 +5,7 @@ IF DB_ID ('Veterinaria_ProyectoSA') IS NULL
 	CREATE DATABASE Veterinaria_ProyectoSA;
 GO
 
-USE Veterinaria_ProyectoSA;
+USE VeterinariaSA;
 GO
 
 IF NOT EXISTS (SELECT * FROM sys.schemas WHERE name = 'tra')

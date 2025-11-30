@@ -12,23 +12,19 @@ public class GenerarDetalleFactura {
 
         String rutaArchivo = Configuracion.rutaBase + "DetalleFactura.csv";
 
-        final int TOTAL_LINEAS = 4_932_288;       // Total registros DetalleFactura
-        final int TOTAL_CITAS = 2_304_000;        // Citas generadas
-        final int TOTAL_TRATAMIENTOS = 2_628_288; // Tratamientos generados
+        final int TOTAL_LINEAS = 4_932_288;
+        final int TOTAL_CITAS = 2_304_000;
+        final int TOTAL_TRATAMIENTOS = 2_304_000;
         final int TOTAL_PRODUCTOS = 250;
         final int TOTAL_FACTURAS = 2_304_000;
 
-        final double PORCENTAJE_CON_CITA = 0.65;
-
-        int lineasConCita = (int) (TOTAL_LINEAS * PORCENTAJE_CON_CITA);
-        int lineasSinCita = TOTAL_LINEAS - lineasConCita;
-
-        // NUEVA LÓGICA: división interna del 65%
-        int lineasConCitaConProducto = (int) (lineasConCita * 0.45);
-        int lineasConCitaSinProducto = lineasConCita - lineasConCitaConProducto;
+        // Cantidades EXACTAS
+        final int TOTAL_CON_CITA = TOTAL_CITAS;                          
+        final int TOTAL_CON_CITA_CON_PRODUCTO = 1_497_600;               
+        final int TOTAL_CON_CITA_SIN_PRODUCTO = 806_400;                 
+        final int TOTAL_SIN_CITA = TOTAL_LINEAS - TOTAL_CON_CITA;        
 
         Random rand = new Random();
-
         long inicio = System.currentTimeMillis();
 
         try (FileWriter writer = new FileWriter(rutaArchivo)) {
@@ -36,23 +32,51 @@ public class GenerarDetalleFactura {
             ArrayList<String> todasLasLineas = new ArrayList<>(TOTAL_LINEAS);
             int idDetalle = 1;
 
-            // 65% — Registros CON cita/tratamiento Y con producto (45% del 65%)
-            
-            for (int i = 0; i < lineasConCitaConProducto; i++) {
+            // ============================================================
+            // LISTA DE TRATAMIENTOS (1:1 con citas)
+            // ============================================================
+            ArrayList<Integer> tratamientosBarajados = new ArrayList<>(TOTAL_TRATAMIENTOS);
+            for (int i = 1; i <= TOTAL_TRATAMIENTOS; i++) {
+                tratamientosBarajados.add(i);
+            }
+            Collections.shuffle(tratamientosBarajados);
+
+            int[] tratamientoPorCita = new int[TOTAL_CITAS + 1];
+            for (int i = 1; i <= TOTAL_CITAS; i++) {
+                tratamientoPorCita[i] = tratamientosBarajados.get(i - 1);
+            }
+
+            // ============================================================
+            // LISTA DE CITAS ÚNICAS, SIN REPETIR, BARAJADAS
+            // ============================================================
+            ArrayList<Integer> citasUnicas = new ArrayList<>(TOTAL_CITAS);
+            for (int i = 1; i <= TOTAL_CITAS; i++) {
+                citasUnicas.add(i);
+            }
+            Collections.shuffle(citasUnicas);
+
+            int indexCita = 0;  
+            // ============================================================
+
+
+            // ============================================================
+            // 1) REGISTROS CON CITA Y CON PRODUCTO (1,497,600)
+            // ============================================================
+            for (int i = 0; i < TOTAL_CON_CITA_CON_PRODUCTO; i++) {
 
                 int productoId = rand.nextInt(TOTAL_PRODUCTOS) + 1;
                 int facturaId = rand.nextInt(TOTAL_FACTURAS) + 1;
                 int cantidad = rand.nextInt(3) + 1;
 
-                int citaId = rand.nextInt(TOTAL_CITAS) + 1;
-                int tratamientoId = rand.nextInt(TOTAL_TRATAMIENTOS) + 1;
+                int citaId = citasUnicas.get(indexCita++);
+                int tratamientoId = tratamientoPorCita[citaId];
 
-                String linea = idDetalle + ","
-                        + productoId + ","
-                        + facturaId + ","
-                        + cantidad + ","
-                        + citaId + ","
-                        + tratamientoId;
+                String linea = idDetalle + "," +
+                        productoId + "," +
+                        facturaId + "," +
+                        cantidad + "," +
+                        citaId + "," +
+                        tratamientoId;
 
                 todasLasLineas.add(linea);
                 idDetalle++;
@@ -62,22 +86,23 @@ public class GenerarDetalleFactura {
                 }
             }
 
-            // 65% — Registros CON cita/tratamiento PERO SIN producto (55% del 65%)
-            
-            for (int i = 0; i < lineasConCitaSinProducto; i++) {
+
+            // ============================================================
+            // 2) REGISTROS CON CITA PERO SIN PRODUCTO (806,400)
+            // ============================================================
+            for (int i = 0; i < TOTAL_CON_CITA_SIN_PRODUCTO; i++) {
 
                 int facturaId = rand.nextInt(TOTAL_FACTURAS) + 1;
                 int cantidad = rand.nextInt(3) + 1;
 
-                int citaId = rand.nextInt(TOTAL_CITAS) + 1;
-                int tratamientoId = rand.nextInt(TOTAL_TRATAMIENTOS) + 1;
+                int citaId = citasUnicas.get(indexCita++);
+                int tratamientoId = tratamientoPorCita[citaId];
 
-                // NOTA: doble coma al inicio donde va el producto
-                String linea = idDetalle + ",,"
-                        + facturaId + ","
-                        + cantidad + ","
-                        + citaId + ","
-                        + tratamientoId;
+                String linea = idDetalle + ",," +  
+                        facturaId + "," +
+                        cantidad + "," +
+                        citaId + "," +
+                        tratamientoId;
 
                 todasLasLineas.add(linea);
                 idDetalle++;
@@ -87,16 +112,20 @@ public class GenerarDetalleFactura {
                 }
             }
 
-            for (int i = 0; i < lineasSinCita; i++) {
+
+            // ============================================================
+            // 3) REGISTROS SIN CITA NI TRATAMIENTO (2,628,288)
+            // ============================================================
+            for (int i = 0; i < TOTAL_SIN_CITA; i++) {
 
                 int productoId = rand.nextInt(TOTAL_PRODUCTOS) + 1;
                 int facturaId = rand.nextInt(TOTAL_FACTURAS) + 1;
                 int cantidad = rand.nextInt(3) + 1;
 
-                String linea = idDetalle + ","
-                        + productoId + ","
-                        + facturaId + ","
-                        + cantidad + ",,";
+                String linea = idDetalle + "," +
+                        productoId + "," +
+                        facturaId + "," +
+                        cantidad + ",,";
 
                 todasLasLineas.add(linea);
                 idDetalle++;
@@ -106,6 +135,7 @@ public class GenerarDetalleFactura {
                 }
             }
 
+            // MEZCLA FINAL DE TODAS LAS LÍNEAS
             Collections.shuffle(todasLasLineas);
 
             for (String linea : todasLasLineas) {
